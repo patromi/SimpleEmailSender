@@ -1,0 +1,1 @@
+Zadanie rakrutacyjne do Akademickiego Koła Aplikacji Internetowych Politechniki Poznańskiej
