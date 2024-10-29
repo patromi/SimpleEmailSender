@@ -10,7 +10,7 @@ class Main:
     def __init__(self, categories_path="kategorie.json", items_path="zbiór_wejściowy.json"):
         self.categories: dict = self._load_categories(self._open_json(categories_path))
         self.items: dict = self._open_json(items_path)
-        self.mapped_items = self._map_items()
+        self.mapped_items:list[dict] = self._map_items()
 
     @staticmethod
     def _open_json(file_path: str) -> dict:
