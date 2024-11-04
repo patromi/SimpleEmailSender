@@ -1,0 +1,30 @@
+Cześć!
+
+Serdecznie dziękujemy za przesłanie zadań. Mam dla ciebie feedback z naszej strony:
+# Task na repozytorium {{response}} - {{ lang }}
+feedback:
+{% if github %}
+    Feedback możesz znaleźć pod tym linkiem: {{ feedback }}.
+{% else %}
+    {{ feedback }}
+{% endif %}
+
+Witamy w kole!
+Poniżej garść informacji na początek:
+
+Zapraszamy na Discorda, gdzie głównie się komunikujemy.
+{{ link }}
+
+Zapraszam także do dołączenia do grupy na FB (służy głównie jako tablica ogłoszeń).
+https://www.facebook.com/groups/229158592421136/
+
+Pierwsze spotkanie odbędzie się w środę 09.11 o godzinie 17:00 w PUT Space w Domu Studenckim nr 1 (DS1). Więcej informacji na Discordzie.
+
+Regularne terminy spotkań zostaną ustalone po zakończeniu rekrutacji, tak żeby uwzględnić też preferencje nowych członków.
+
+W razie jakichkolwiek pytań kontaktuj się z nami na Discordzie:
+Dołącz do serwera AKAI na Discordzie!
+
+Pozdrawiamy,
+Zespół AKAI
+
