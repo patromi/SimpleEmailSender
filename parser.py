@@ -11,7 +11,7 @@ class Parser:
     def match_https_url(url) -> bool:
         return isinstance(url, str) and url.startswith('https://github.com/') and " " not in url
 
-    def parse(self, path_csv) -> pd.DataFrame:
+    def parse(self, path_csv: str) -> pd.DataFrame:
         try:
             data = pd.read_csv(path_csv)
         except FileNotFoundError:
@@ -31,8 +31,7 @@ class Parser:
         data['body'] = data.apply(self._generate_body, axis=1)
         return data
 
-    def _generate_body(self, row):
-
+    def _generate_body(self, row: pd.Series) -> str:
         return self.template.render(
             lang=row['Technologia wybrana do wykonania zadnia rekrutacyjnego'],
             link="discord",
