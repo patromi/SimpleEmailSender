@@ -24,3 +24,8 @@ PASSWORD=your_password               # Your email password
 SUBJECT=Email Subject                # Subject line for emails
 
 CSV_PATH=path/to/input.csv           # Path to the input recrutation CSV file
+
+MODE=template | custom_template      # Template for default csv recrutation file or custom for custom mail body without csv file
+
+TEMPLATE_PATH==path/to/template.html # Path to the custom template file
+
