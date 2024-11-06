@@ -15,7 +15,7 @@ class IOController:
     @staticmethod
     def open_txt(custom_template_path: str) -> str:
         try:
-            with open(custom_template_path) as f:
+            with open(custom_template_path,encoding='utf8') as f:
                 data = f.read()
         except FileNotFoundError:
             raise IOError(f"Error: File {custom_template_path} not found.")

@@ -2,7 +2,7 @@ import os
 
 from sender import Sender
 from parser import Parser
-
+from dotenv import load_dotenv
 
 class Main:
     def __init__(self, path_csv: str, mode: str = "template", template_path: str = None):
@@ -14,7 +14,7 @@ class Main:
 
 
 if __name__ == "__main__":
-
+    load_dotenv()
     mode = os.getenv("MODE").lower()
     csv_path = os.getenv("CSV_PATH")
     template_path = os.getenv("TEMPLATE_PATH")
