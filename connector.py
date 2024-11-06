@@ -9,10 +9,12 @@ class SMTPConnector:
         self._from_email = os.getenv("EMAIL")
         self._password = os.getenv("PASSWORD")
         self._subject = os.getenv("SUBJECT")
+        self._port = int(os.getenv("PORT")) if os.getenv("PORT").isdigit() else 587
+        self._host = os.getenv("HOST")
         self._server = None
 
     def _connect_to_server(self):
-        self._server = smtplib.SMTP('smtp.gmail.com', 587)
+        self._server = smtplib.SMTP(self._host, self._port)
         self._server.starttls()
         self._server.login(self._from_email, self._password)
 
